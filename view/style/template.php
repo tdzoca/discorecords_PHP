@@ -20,7 +20,7 @@
   <body>
    
     <?php 
-      $session = 1;
+      $session = null;
       if ($session == null){
       }else{
         include 'menu.php';
