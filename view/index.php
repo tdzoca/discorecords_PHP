@@ -1,4 +1,4 @@
-<?php include './style/template.php'; ?>
+<?php include_once '../style/template.php'; ?>
 
 <div class="col-sm-3 col-sm-offset-4" style="margin-top: 250px;">
     <h2>Disco Redords PHP</h2> .. <h5>Login</h5>
