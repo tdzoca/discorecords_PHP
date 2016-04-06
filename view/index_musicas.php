@@ -14,11 +14,11 @@
         </tr>    
         <?php foreach ($musicasControl->listar() as $value){ ?>
                <tr>
-                 <td>1</td>
+                 <td><?php echo $value->id; ?></td>
                  <td><?php echo $value->titulo; ?></td>
                  <td><?php echo $value->nome; ?></td>
-                 <td><a class="btn btn-warning" href="http://localhost/discorecords_PHP/view/editar_musica.php">editar</a>
-                     <a class="btn btn-danger" href="http://localhost/discorecords_PHP/view/index_musicas.php">deletar</a></td>
+                 <td><?php echo "<a href='editar_musica.php?acao=atualizar&id=".$value->id."'>editar</a>" ?>
+                     <?php echo "<a class='btn btn-danger' href='index_musicas.php'>deletar</a></td>"?>
              </tr> 
             <?php } ?>
    </table>

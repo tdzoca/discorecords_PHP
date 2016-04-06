@@ -30,4 +30,26 @@ class MusicasControl {
         $musicos = new Musica();
         return $musicos->listarCompositor();
     }
+    
+    function findControl($id) {
+        $musica = new Musica();
+        $resultado = $musica->find($id);
+        return $resultado;
+        
+    }
+    
+    function updateControl() {
+        $musica = new Musica();
+        $titulo = $_POST['titulo'];
+        $autor_id = $_POST['autor_id'];
+        $midia_id = $_POST['midia_id'];
+        $id = $_POST['id'];
+        $musica->setTitulo($titulo);
+        $musica->setAutor_id($autor_id);
+        $musica->setMidia_id($midia_id);
+        $musica->update($id);
+        
+        
+    }
+    
 }
